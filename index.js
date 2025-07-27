@@ -7,7 +7,7 @@ const cityTemp = document.getElementById("city-temp");
 
 async function getData(cityName) {
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=60300353162c4ba4917111515251205&q=${cityName}&aqi=yes`
+    `https://api.weatherapi.com/v1/current.json?key=60300353162c4ba4917111515251205&q=${cityName}&aqi=yes`
   );
   return await response.json();
 }
@@ -23,4 +23,3 @@ button.addEventListener("click", async () => {
 
 console.log("Weather Check by calling API");
 console.log("wheather Check by Fetching the API ");
-particlesJS.load("particles-js", "particles.json");
